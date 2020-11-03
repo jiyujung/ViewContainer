@@ -23,6 +23,21 @@ public class MainActivity extends AppCompatActivity {
 
     View.OnClickListener btnListener = new View.OnClickListener() {
         @Override
+        public void onClick(View view) {
+            switch (view.getId()) {
+                case R.id.btn_prev:
+                    flipper.setFlipInterval(1000);
+                    flipper.startFlipping();
+                    break;
+                case R.id.btn_next:
+                    flipper.stopFlipping();
+                    break;
+            }
+        }
+    };
+
+    /*View.OnClickListener btnListener = new View.OnClickListener() {
+        @Override
         public void onClick(View v) {
             switch (v.getId()) {
                 case R.id.btn_prev:
@@ -33,5 +48,5 @@ public class MainActivity extends AppCompatActivity {
                     break;
             }
         }
-    };
+    };*/
 }
