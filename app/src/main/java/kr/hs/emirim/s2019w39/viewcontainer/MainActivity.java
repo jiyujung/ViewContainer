@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_flipper);
+        setContentView(R.layout.activity_tab_test2);
         flipper = findViewById(R.id.flipper);
         Button btnPrev = findViewById(R.id.btn_prev);
         Button btnNext = findViewById(R.id.btn_next);

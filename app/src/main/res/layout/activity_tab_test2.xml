@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@android:id/tabhost"
+    tools:context=".TabActivityTest">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <LinearLayout
+                android:id="@+id/linear_solar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FAF4C0"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/solar"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_moonstar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#B2FFF8"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/moonstar"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_wheein"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#A2D6FF"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/wheein"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_hwasa"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFE5BF"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/hwasa"/>
+            </LinearLayout>
+        </FrameLayout>
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</TabHost>
