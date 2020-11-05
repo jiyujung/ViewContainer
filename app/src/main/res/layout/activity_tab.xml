@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@android:id/tabhost"
-    tools:context=".TabActivity">
+    tools:context=".TabActivityTest">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -32,7 +32,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/moonstar"
+                android:id="@+id/linear_moonstar"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="#B2FFF8"
@@ -44,7 +44,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/wheein"
+                android:id="@+id/linear_wheein"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="#A2D6FF"
